@@ -14,20 +14,29 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="https://thomveldhuis.xyz/img/logo/tv-small.png" alt="header logo with link"></a>
+      <a href="../index.html"><img src="https://thomveldhuis.xyz/img/logo/tv-small.png" alt="header logo with link"></a>
       <ul>
-        <li><a style="display: block;" href="index.html">Home</a></li>
+        <li><a style="display: block;" href="../index.html">Home</a></li>
         <li><a style="display: block;" href="https://thomveldhuis.xyz">Personal page</a></li>
       <hr>
     </header>
     <main>
+      <div class='japaneseImage'>
+        <img id="japanese"  src="../images/writing.png" alt="dithered japanese woodblock art">
+          <div class='caption'>
+            <a href="https://ukiyo-e.org/image/met/DP143435" target="_blank" >
+              Ryuryukyo Shinsai - Man Seated With His Reading and Writing Materials before Him 
+	    </a>
+          </div>
+      </div>
+      <br>
       <h1> Thoms writings and discourses </h1> 
       <p> This is a place where I will post my writings </p>
-      <ul style="list-style: hiragana;">
+      <ul>
         <% $posts.each do |p| %>
-          <li>
-            <a href="posts/<%= p %>.html">
-              <h2><%= p[11..].gsub(/[-]/, " ") %></h2>
+          <li style="list-style: hiragana;">
+            <a href="posts/<%= p %>.html"
+              <h2><%= p[11..-1].gsub(/[-]/, " ") %></h2>
             </a>
           </li>
         <% end %>

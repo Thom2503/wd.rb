@@ -1,14 +1,14 @@
 <html>
   <head>
-    <title> <%= $postTitle %> </title>
+    <title> blog.thomveldhuis.xyz </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://thomveldhuis.xyz/img/logo/tv-small.png"/>
     <link rel="stylesheet" href="https://thomveldhuis.xyz/czz/index.css">
     <style>
-      pre {
-        max-width: 40em;
-
+      h2:hover {
+        background-color: purple;
+        color: white;
       }
     </style>
   </head>
@@ -21,11 +21,26 @@
       <hr>
     </header>
     <main>
-      <h1> <%= $postTitle %> </h1>
-      <em> <%= $postDate %> </em>
-      <pre>
-<%= $postContent %>
-      </pre>
+      <div class='japaneseImage'>
+        <img id="japanese"  src="../images/writing.png" alt="dithered japanese woodblock art">
+          <div class='caption'>
+            <a href="https://ukiyo-e.org/image/met/DP143435" target="_blank" >
+              Ryuryukyo Shinsai - Man Seated With His Reading and Writing Materials before Him 
+	    </a>
+          </div>
+      </div>
+      <br>
+      <h1> Thoms writings and discourses </h1> 
+      <p> This is a place where I will post my writings </p>
+      <ul>
+        
+          <li style="list-style: hiragana;">
+            <a href="posts/2022-05-21-First-thing-here.html"
+              <h2>First thing here</h2>
+            </a>
+          </li>
+        
+      </ul>
     </main>
      <footer>
       <hr>
@@ -39,8 +54,7 @@
 			<a href="http://www.anybrowser.org/campaign/">
 				<img src="https://thomveldhuis.xyz/img/anybrowser.gif" width="graphic-width-in-pixels" height="graphic-height-in-pixels" alt="Viewable With Any Browser">
 			</a> |
-      <span>Thom Veldhuis</span>
+      <span>Thom Veldhuis &#169; <span id="year"></span></span>
     </footer>
-
   </body>
 </html>
