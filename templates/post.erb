@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title> <%= $postTitle %> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://thomveldhuis.xyz/img/logo/tv-small.png"/>
+    <link rel="stylesheet" href="https://thomveldhuis.xyz/czz/index.css">
+    <style>
+      pre {
+        max-width: 40em;
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="https://thomveldhuis.xyz/img/logo/tv-small.png" alt="header logo with link"></a>
+      <ul>
+        <li><a style="display: block;" href="index.html">Home</a></li>
+        <li><a style="display: block;" href="https://thomveldhuis.xyz">Personal page</a></li>
+      <hr>
+    </header>
+    <main>
+      <h1> <%= $postTitle %> </h1>
+      <em> <%= $postDate %> </em>
+      <pre>
+<%= $postContent %>
+      </pre>
+    </main>
+     <footer>
+      <hr>
+      <a href="https://github.com/Thom2503" target="_blank">Github</a> |
+      <a href="https://twitter.com/Thom2503" target="_blank">Twitter</a> |
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    		<img style="border:0;width:88px;height:31px"
+     		 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+     		 alt="Valid CSS!">
+   		</a> |
+			<a href="http://www.anybrowser.org/campaign/">
+				<img src="https://thomveldhuis.xyz/img/anybrowser.gif" width="graphic-width-in-pixels" height="graphic-height-in-pixels" alt="Viewable With Any Browser">
+			</a> |
+      <span>Thom Veldhuis</span>
+    </footer>
+
+  </body>
+</html>
